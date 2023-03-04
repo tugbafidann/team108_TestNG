@@ -27,7 +27,7 @@ public class C06_SoftAssert {
             //(yuan)","Denmark (krone)","Eurozone (euro)","Great Britain (pound)","Hong Kong
             //(dollar)","Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand
             //(dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"
-    @Test
+    @Test (groups = "smoke")
     public void webappTesti(){
         // 1. “https://zero.webappsecurity.com/” Adresine gidin
         Driver.getDriver().get(ConfigReader.getProperty("zeroUrl"));

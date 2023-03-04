@@ -18,7 +18,7 @@ public class C05_SoftAssert {
     // amazon anasayfaya gidip, dogru sayfaya gittigimizi DOGRULAYIN (verify)
     // Nutella icin arama yapip, sonuclarin Nutella icerdigini dogrulayin
     // ilk urune tiklayip, urun isminde Nutella gectigini dogrulayin
-    @Test
+    @Test (groups = {"smoke","mr1"})
     public void amazonTesti(){
         // amazon anasayfaya gidip, dogru sayfaya gittigimizi DOGRULAYIN (verify)
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));

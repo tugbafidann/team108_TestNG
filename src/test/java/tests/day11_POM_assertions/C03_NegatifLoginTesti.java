@@ -15,7 +15,7 @@ public class C03_NegatifLoginTesti {
     // 2- gecersiz username, gecerli password
     // 3- gecersiz username, gecersiz password
     QdPage qdPage=new QdPage();
-    @Test
+    @Test (groups = "smoke")
     public void negatifLogin1(){
         qdPage=new QdPage();
         Driver.getDriver().get(ConfigReader.getProperty("qdUrl"));
