@@ -62,7 +62,7 @@ public class C06_SoftAssert {
             //(dollar)","Japan (yen)","Mexico (peso)","Norway (krone)","New Zealand
             //(dollar)","Sweden (krona)","Singapore (dollar)","Thailand (baht)"
         List<WebElement> optionsElementListesi=select.getOptions();
-        List<String> actualOptionStringList=ReusableMethods.stringListeCevir(optionsElementListesi);
+        List<String> actualOptionStringList= ReusableMethods.stringListeCevir(optionsElementListesi);
         String[] expectedArr={"Select One", "Australia (dollar)", "Canada (dollar)","Switzerland (franc)"
                 ,"China (yuan)","Denmark (krone)","Eurozone (euro)","Great Britain (pound)"
                 ,"Hong Kong (dollar)","Japan (yen)","Mexico (peso)","Norway (krone)",

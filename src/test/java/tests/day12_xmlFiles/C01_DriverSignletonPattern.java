@@ -1,4 +1,4 @@
-package tests.day_xmlFiles;
+package tests.day12_xmlFiles;
 
 import org.testng.annotations.Test;
 
