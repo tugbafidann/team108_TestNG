@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 import utilities.Driver;
 import utilities.ReusableMethods;
 
-public class C_ReusableMethodsSwitchgwindows {
+public class C02_ReusableMethodsSwitchgwindows {
     //  Tests package’inda yeni bir class olusturun: WindowHandle2
     //  https://the-internet.herokuapp.com/windows adresine gidin.
     //  Sayfadaki textin “Opening a new window” olduğunu doğrulayın.
