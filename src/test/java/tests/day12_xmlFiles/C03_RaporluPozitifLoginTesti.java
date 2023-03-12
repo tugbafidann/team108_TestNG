@@ -21,18 +21,17 @@ public class C03_RaporluPozitifLoginTesti extends TestBaseRapor {
         QdPage qdPage= new QdPage();
         qdPage.ilkLoginLinki.click();
         extentTest.info("Ilk login linkine tiklandi");
+        qdPage.cookieaccept.click();
 
         // gecerli kullanici adi ve password ile giris yapin
         qdPage.emailKutusu.sendKeys(ConfigReader.getProperty("qdGecerliUsername"));
         extentTest.info("Gecerli email yazildi");
-        qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecersizPassword")+ Keys.ENTER);
+        qdPage.passwordKutusu.sendKeys(ConfigReader.getProperty("qdGecerliPassword"));
         extentTest.info("Gecerli password yazildi ve giris yapildi");
-        // qdPage.loginButonu.click();
+        qdPage.loginButonu.click();
         // basarili bir sekilde giris yapildigini test edin
         Assert.assertTrue(qdPage.basariliGirisElementi.isDisplayed());
         extentTest.pass("Basarili sekilde giris yapildigi test edildi");
-
-
 
     }
 }

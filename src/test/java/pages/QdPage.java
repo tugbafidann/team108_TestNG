@@ -18,8 +18,19 @@ public class QdPage {
     @FindBy(id="login-password")
     public WebElement passwordKutusu;
 
-    @FindBy(xpath = "//button[@class='btn red radius-5 mt-4 w-100']")
+    @FindBy(xpath = "(//button[@type='submit'])[2]")
     public WebElement loginButonu;
+    // //button[text()='Login']
+
+
+
+    @FindBy(xpath = "//a[@onclick='cookieAccept();']")
+    public WebElement cookieaccept;
+
+    @FindBy(xpath = "//a[text()='Accept']")
+    public WebElement cookieacceptRaporsuz;
+
+
 
     @FindBy(xpath = "//a[text()='Instructor']")
     public WebElement basariliGirisElementi;
